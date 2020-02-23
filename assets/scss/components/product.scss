@@ -1,0 +1,180 @@
+
+#product{
+  position: relative;
+}
+
+.product-container{
+  background-image: url("~/assets/images/muice_compare.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.product-left {
+  background-color: rgba(228, 202, 227, 0.3);
+  padding-left: 30px;
+}
+
+.product-right {
+  background-color: rgba(192, 227, 245, 0.3);
+  padding-right: 30px;
+}
+
+.product-title {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+
+.product-item {
+  display: flex;
+  width: 100%;
+  margin: 2.5rem auto;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  &-r {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  &-icon {
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 35px;
+    margin-bottom: 5px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &-title-l, &-title-r{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-title-l div {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &-title-r div {
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &-title-red {
+    color: #C22D33;
+    font-size: 1.1rem;
+  }
+
+  &-title-blue {
+    color: #008ED8;
+    font-size: 1.1rem;
+  }
+}
+
+
+.product-footer {
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #B88CE0;
+  color: white;
+  padding: 1.5rem 2.5rem;
+}
+
+
+@media screen and (min-width: $sizeMD) {
+
+  .product-left, .product-right {
+    padding-bottom: 5rem;
+  }
+
+  .product-title {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 7rem;
+  }
+
+  .product-container{
+    background-size: 30%;
+  }
+  
+  .product-item {
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    &-icon {
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 50px;
+      margin-bottom: 0px;
+    }
+    &-title-red {
+      color: #C22D33;
+      font-size: 1.3rem;
+    }
+  
+    &-title-blue {
+      color: #008ED8;
+      font-size: 1.3rem;
+    }
+
+    &-title-l div {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    &-title-r div {
+      display: flex;
+      justify-content: flex-start;
+  
+      span {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    &-title-l, &-title-r{
+      margin: 0 20px;
+    }
+
+    &-r {
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .product-footer {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #B88CE0;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: -35%;
+  }
+}
+
+@media screen and (min-width: $sizeLG) {
+  .product-title {
+    width: 50%;
+  }
+}
