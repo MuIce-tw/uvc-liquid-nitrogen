@@ -1,13 +1,14 @@
-import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
 
 document.body.onscroll = function() {scrollEvent()};
 document.body.onresize = function() {resizeEvent()};
 var menuCloseBtn = document.getElementById("navbarClose");
 var menuBtn = document.getElementById("navbarMobileMenu");
 var mainLogo = document.getElementById("mainLogo");
+var mainLogoImg1 = document.getElementById("mainLogoImg1");
+var mainLogoImg2 = document.getElementById("mainLogoImg2");
 
 var text = document.getElementsByClassName("nav-item");
-var menuLink = ['#product', '#application', '#specification', '#about', 'english']
+var menuLink = ['#product', '#application', '#specification', '#certification',  '#about', 'english']
 
 for (var i=0;i<text.length;i++) {
   text[i].addEventListener("click", function(e){
@@ -33,7 +34,9 @@ menuBtn.addEventListener("click", function(e){
 function closeMenu() {
   var menu = document.getElementById("navbarSupportedContent");
   menu.classList.remove("show");
-  menuBtn.style.display = "block";
+  if (getWindowWidth() < 768) {
+    menuBtn.style.display = "block";
+  }
 }
 
 function scrollEvent() {
@@ -44,14 +47,16 @@ function scrollEvent() {
     //mobile title
     displayMobileTitle();
   } else {
-    console.log('sas' , document.documentElement.scrollTop );
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
       displayPc2Title();
       header.classList.add("nav-custom-fixed-top");
+      mainLogoImg1.classList.add("hidden");
+      mainLogoImg2.classList.remove("hidden");
     } else {
-      console.log('e1');
       displayPc1Title();
       header.classList.remove("nav-custom-fixed-top");
+      mainLogoImg1.classList.remove("hidden");
+      mainLogoImg2.classList.add("hidden");
     }
   }
 }
@@ -62,7 +67,6 @@ function displayMobileTitle() {
     text[i].classList.remove("nav-text-pc-1");
     text[i].classList.remove("nav-text-pc-2");
     text[i].classList.add("nav-text-moble");
-    console.log(`${i} ${text[i].classList}`)
   }
 }
 
@@ -72,7 +76,6 @@ function displayPc1Title() {
     text[i].classList.remove("nav-text-moble");
     text[i].classList.remove("nav-text-pc-2");
     text[i].classList.add("nav-text-pc-1");
-    console.log(`${i} ${text[i].classList}`)
   }
 }
 
@@ -82,7 +85,6 @@ function displayPc2Title() {
     text[i].classList.remove("nav-text-moble");
     text[i].classList.remove("nav-text-pc-1");
     text[i].classList.add("nav-text-pc-2");
-    console.log(`${i} ${text[i].classList}`)
   }
 }
 
@@ -91,6 +93,7 @@ function resizeEvent() {
   if (getWindowWidth() >= 768) {
     menuBtn.style.display = "none";
   } else {
+    console.log("!!!!");
     menuBtn.style.display = "block";
     closeMenu();
   }  
