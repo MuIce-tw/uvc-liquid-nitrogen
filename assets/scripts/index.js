@@ -93,7 +93,8 @@ function resizeEvent() {
   if (getWindowWidth() >= 768) {
     menuBtn.style.display = "none";
   } else {
-    console.log("!!!!");
+    mainLogoImg1.classList.add("hidden");
+    mainLogoImg2.classList.remove("hidden");
     menuBtn.style.display = "block";
     closeMenu();
   }  
