@@ -3,17 +3,16 @@
   position: relative;
   padding: 1rem 0px;
   padding-top: 3rem;
-  // background-image: url("~/assets/images/muice_aboutus.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background-color: #E6E6E6;
   min-height: 350px;
 }
 
 .about-title {
   color: $colorBlue;
-  margin-bottom: 2rem;
-  font-weight: 600;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 2rem;
 }
 
 
@@ -22,11 +21,12 @@
   font-weight: 400;
   font-size: 1rem;
   &-title {
+    margin-left: 2rem;
     font-weight: 500;
   }
 
   &-item {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -39,11 +39,21 @@
   text-align: center;
 }
 
+.about-logo-m {
+  height: 200px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 
 
 @media screen and (min-width: $sizeMD) { 
   .about-info {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    background-position: 75% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("~/assets/images/logo_v.png");
   }
 
   .about-qrcode {
