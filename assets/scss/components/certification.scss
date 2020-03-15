@@ -1,0 +1,31 @@
+.certification-container {
+  padding: 6rem 0px 20px 0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("~/assets/images/muice_certi_m.jpg");
+  min-height: 100vh;
+  
+
+  .container{
+    max-width: 800px;
+  }
+
+  .col-6, .col-sm-6  {
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+@media screen and (min-width: $sizeMD) {
+  .certification-container {
+    
+    background-image: url("~/assets/images/muice_certi.jpg");
+  }
+}

@@ -89,11 +89,10 @@
 }
 
 @media screen and (min-width: $sizeMD) {
-
   .specification-container {
+    padding: 6rem 0px 6rem 0px;
     background-image: url("~/assets/images/muice_spec.jpg");
   }
-  
 }
 
 @media screen and (min-width: $sizeLG) {
