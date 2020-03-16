@@ -1,6 +1,7 @@
 
 #product{
   position: relative;
+  background-color: #282828;
 }
 
 .product-container{
@@ -9,9 +10,8 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   color: white;
-  background-color: #282828;
+  padding-top: 6rem;
   min-height: 100vh;
-  padding-top: 3rem;
 }
 
 .product-left {
@@ -27,7 +27,7 @@
 .product-title {
   width: 100%;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .product-item {
@@ -100,6 +100,10 @@
 
 
 @media screen and (min-width: $sizeMD) {
+  
+  .product-container {
+    padding-top: 8rem;
+  }
 
   .product-left, .product-right {
     padding-bottom: 2rem;

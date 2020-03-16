@@ -13,6 +13,7 @@ html, body {
   font-family: 'Microsoft JhengHei', '微軟正黑體', "SF", "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: #E6E6E6;
 }
 
 .text-center {
@@ -30,6 +31,15 @@ html, body {
 .show {
   display: block;
 }
+
+.show-flex {
+  display: flex;
+}
+
+.show-opacity {
+  opacity: 1;
+}
+
 
 .hidden {
   display: none;

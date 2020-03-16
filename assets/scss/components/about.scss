@@ -2,7 +2,7 @@
 .about-container{
   position: relative;
   padding: 1rem 0px;
-  padding-top: 3rem;
+  padding-top: 6rem;
   background-color: #E6E6E6;
   min-height: 350px;
 }
@@ -12,6 +12,10 @@
   margin-bottom: 1rem;
   font-weight: 400;
   font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.about-text {
   margin-left: 2rem;
 }
 
@@ -35,7 +39,12 @@
   margin-bottom: 40px;
 }
 
+.about-qrcode-img {
+  border-radius: 10px;
+}
+
 .about-qrcode-link {
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -45,15 +54,38 @@
   margin-bottom: 1rem;
 }
 
+.line-icon-mobile {
+  width: 50px;
+  height: auto;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+}
 
 
 @media screen and (min-width: $sizeMD) { 
+
+  .about-container{
+    padding-top: 3.5rem;
+  }
+
+  .line-icon-mobile {
+    width: 80px;
+    right: 30px;
+    bottom: 30px
+  }
+
   .about-info {
     font-size: 1rem;
     background-position: 75% center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("~/assets/images/logo_v.png");
+  }
+
+  .about-text {
+    margin-left:  0px;
   }
 
   .about-qrcode {
