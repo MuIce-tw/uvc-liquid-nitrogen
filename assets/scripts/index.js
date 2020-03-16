@@ -67,7 +67,7 @@ function scrollEvent() {
     if (
       (bodyScrollTop > viewHeight * 2 ||
         elementScrollTop > viewHeight * 2) &&
-      ( elementScrollTop < viewHeight + applicationOffsetHeight)
+      ( elementScrollTop < viewHeight + applicationOffsetHeight + 220)
     ) {
       applicationTitleMobile.classList.add("show-opacity");
     } else {
