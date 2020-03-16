@@ -4,18 +4,10 @@
   background-color: #282828;
 }
 
-.application_img {
-  min-height: 300px;
-  height: 50vh;
+.application-img {
   width: 100%;
-  background-position:  center center;
-  background-size: cover;
+  height: auto;
 }
-
-.application-title{
-  display: none;
-}
-
 
 .application-title-mobile{
   display: flex;
@@ -38,55 +30,6 @@
   transition-duration: 0.5s;
 }
 
-#application_img_1 {
-  background-image: url('~/assets/images/muice_application_01_m.jpg');
-}
-
-#application_img_2 {
-  background-image: url('~/assets/images/muice_application_02_m.jpg');
-}
-
-#application_img_3 {
-  background-image: url('~/assets/images/muice_application_03_m.jpg');
-}
-
-#application_img_4 {
-  background-image: url('~/assets/images/muice_application_04_m.jpg');
-}
 
 @media screen and (min-width: $sizeSM) {
-  .application-title{
-    position: absolute;
-    bottom: 50%;
-    margin-bottom: -30px;
-    left: 50%;
-    margin-left: -15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #C7E3EF;
-    border-radius: 40px;
-    padding: 0rem 1rem;
-    width: 30%;
-    height: 60px;
-    img {
-      width: 85%;
-    }
-  }
-
-  #application_img_1 {
-    background-image: url('~/assets/images/muice_application_01.jpg');
-  }
-  
-  #application_img_2 {
-    background-image: url('~/assets/images/muice_application_02.jpg');
-  }
-  
-  #application_img_3 {
-    background-image: url('~/assets/images/muice_application_03.jpg');
-  }
-  
-  #application_img_4 {
-    background-image: url('~/assets/images/muice_application_04.jpg');
-  }
 }

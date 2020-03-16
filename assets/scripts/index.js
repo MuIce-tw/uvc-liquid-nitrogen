@@ -60,9 +60,6 @@ function scrollEvent() {
     "applicationTitleMobile"
   );
 
-  console.log("bodyScrollTop", bodyScrollTop);
-  console.log("elementScrollTop", elementScrollTop);
-  console.log("applicationOffsetHeight", viewHeight + applicationOffsetHeight);
   if (getWindowWidth() < 768) {
     //mobile title
     displayMobileTitle();
@@ -70,7 +67,7 @@ function scrollEvent() {
     if (
       (bodyScrollTop > viewHeight * 2 ||
         elementScrollTop > viewHeight * 2) &&
-      ( elementScrollTop < viewHeight + applicationOffsetHeight +220)
+      ( elementScrollTop < viewHeight + applicationOffsetHeight)
     ) {
       applicationTitleMobile.classList.add("show-opacity");
     } else {
