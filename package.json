@@ -9,6 +9,7 @@
   "devDependencies": {
     "eslint": "^6.6.0",
     "fs": "^0.0.1-security",
+    "parcel": "^2.0.0-alpha.3.2",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-ogimage": "^1.1.0",
     "posthtml-img-autosize": "^0.1.4",

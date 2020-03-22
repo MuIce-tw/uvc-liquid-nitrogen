@@ -1,5 +1,5 @@
 .specification-container {
-  padding: 6rem 0px 20px 0px;
+  padding: 6rem 0px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +39,7 @@
   .card{
     border: 0;
     background-color: transparent;
+    margin-bottom: 2rem;
   }
 
   .card-header{
@@ -73,9 +74,6 @@
   }
 }
 
-.accordion>.card>.card-header {
-  margin-bottom: 15px;
-}
 
 
 @media screen and (min-width: $sizeSM) {
@@ -90,7 +88,7 @@
 
 @media screen and (min-width: $sizeMD) {
   .specification-container {
-    padding: 6rem 0px 6rem 0px;
+    padding: 8rem 0px;
     background-image: url("~/assets/images/muice_spec.jpg");
   }
 }
